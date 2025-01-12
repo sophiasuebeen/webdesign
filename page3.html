@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="page345style.css">
+    </head>
+    
+    <body>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="page2.html"><li>Home</li></a>
+                <a href="page3.html"><li>High Level Clouds</li></a>
+                <a href="page4.html"><li>Mid Level Clouds</li></a>
+                <a href="page5.html"><li>Low Level Clouds</li></a> 
+            </div>
+            
+            <div id="main"><button class="openbtn" onclick="openNav()">&#9776;</button></div>
+            
+            <h1>High Level Clouds</h1>
+            
+            <div id="content">
+                <img src="images/cirrus.jpg" class="imgs" img id="myImg">
+                <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+                </div>
+                <br>
+                <h2>Cirrus</h2>
+                <p>Cirrus clouds are delicate, feathery clouds that are made mostly of ice crystals.
+                Their wispy shape comes from wind currents which twist and spread the ice crystals into strands.</p>
+                <br>
+                
+                <img src="images/cirrostratus.jpg" class="imgs" img id="myImg">
+                <br>
+                <h2>Cirrostratus</h2>
+                <p>Cirrostratus clouds are thin, white clouds that cover the whole sky like a veil.
+                These clouds are most commonly seen in the winter, and can cause the appearance of a halo around the sun or the moon.</p>
+                <br>
+                
+                <img src="images/cirrocumulus.jpg" class="imgs" img id="myImg">
+                <br>
+                <h2>Cirrocumulus</h2>
+                <p>Cirrocumulus clouds are thin, sometimes patchy, sheet-like clouds.
+                They sometimes look like they’re full of ripples or are made of small grains.</p>
+             </div>   
+            
+            
+            <div id="footer">
+                <center>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" class="contact"></a>
+                    <a href="https://www.instagram.com"><img src="images/insta.png" class="contact"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube.png" class="contact"></a>
+                    <br>
+                    <a href="page6.html" id="request">Request for Rectification</a>
+                </center>
+                
+            </div>
+        
+        <script> /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }</script>
+        
+        <script>
+            // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+        </script>
+    </body>
+</html>

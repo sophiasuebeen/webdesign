@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="page6style.css">
+    </head>
+    
+    <body>
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="page2.html"><li>Home</li></a>
+                <a href="page3.html"><li>High Level Clouds</li></a>
+                <a href="page4.html"><li>Mid Level Clouds</li></a>
+                <a href="page5.html"><li>Low Level Clouds</li></a> 
+            </div>
+            
+            <div id="main"><button class="openbtn" onclick="openNav()">&#9776;</button></div>
+            
+        <center><div class="box">
+            <div id="text">
+                <h1>Request</h1>
+                <br>
+                <p>Tel: 123-456-7890  |  Email: sophia.park@stpaulseoul.org</p>
+            </div>
+            
+            <form   action="http://"
+                method="post">
+            <label class="label">First Name</label>
+            <input type="text" name="firstname">
+            <br>
+            
+            <label class="label">Last Name</label>
+            <input type="text" name="lastname">
+            <br>
+            
+            <label class="label">Phone</label>
+            <input type="text" name="telephone">
+            <br>
+           
+            <label class="label">Email</label>
+            <input type="text" name="email">
+            <br>
+            <br>
+            <label class="label">Request</label>
+            <br>
+            <textarea rows="5" cols="50" name="instructions"></textarea>
+            <br>
+            
+            <button type="submit" class="submit">Submit</button>
+            
+            </form>
+        </div></center>
+    
+     <script> /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }</script>
+        
+</html>

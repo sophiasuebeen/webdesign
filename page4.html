@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="page345style.css">
+    </head>
+    
+    <body>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="page2.html"><li>Home</li></a>
+                <a href="page3.html"><li>High Level Clouds</li></a>
+                <a href="page4.html"><li>Mid Level Clouds</li></a>
+                <a href="page5.html"><li>Low Level Clouds</li></a> 
+            </div>
+            
+            <div id="main"><button class="openbtn" onclick="openNav()">&#9776;</button></div>
+            
+            <h1>Mid Level Clouds</h1>
+            
+            <div id="content">
+                <img src="images/altocumulus.jpg" class="imgs" img id="myImg">
+                <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+                </div>
+                <br>
+                <h2>Altocumulus</h2>
+                <p>Altocumulus clouds have several patchy white or gray layers, and seem to be made up of many small
+                rows of fluffy ripples. They are lower than cirrus clouds, but still quite high. They are made of liquid water,
+                but they don’t often produce rain.</p>
+                <br>
+                
+                <img src="images/altostratus.jpg" class="imgs" img id="myImg">
+                <br>
+                <h2>Altostratus</h2>
+                <p>Altostratus clouds are gray or blue-gray mid-level clouds composed of ice crystals and water droplets.
+                The clouds usually cover the entire sky.</p>
+                <br>
+                
+                <img src="images/nimbostratus.jpg" class="imgs" img id="myImg">
+                <br>
+                <h2>Nimbostratus</h2>
+                <p>Nimbostratus clouds are dark, gray clouds that seem to fade into falling rain or snow.
+                They are so thick that they often blot out the sunlight.</p>
+             </div>   
+            
+            
+            <div id="footer">
+                <center>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" class="contact"></a>
+                    <a href="https://www.instagram.com"><img src="images/insta.png" class="contact"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube.png" class="contact"></a>
+                    <br>
+                    <a href="page6.html" id="request">Request for Rectification</a>
+                </center>
+                
+            </div>
+        
+        <script> /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }</script>
+        
+        <script>
+            // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+        </script>
+    </body>
+</html>

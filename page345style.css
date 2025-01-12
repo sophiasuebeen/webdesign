@@ -1,0 +1,253 @@
+body,html
+{
+    margin: 0;
+    padding: 0;
+    background-color:#1B1F26;
+}
+
+::-webkit-scrollbar { display: none; }
+
+* {
+  box-sizing: border-box;
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 60px;
+  float: left;
+  cursor: pointer;
+  background-color:transparent;
+  color: #A38D98;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.imgs
+{
+    float: left;
+    height: 350px;
+    width: 300px;
+    padding: 20px;
+}
+
+
+.button
+{
+  border:solid;
+  color:white;
+  padding:15px 30px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:14px;
+  margin:4px 2px;
+  cursor:pointer;
+  margin-bottom:1800px;
+}
+
+.button:hover
+{
+  background-color:#5F6F87;
+}
+
+#content
+{
+    margin-left: 340px;
+}
+
+h1
+{
+  color: #A38D98;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 340px;
+  font-family: Times new Roman;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+h2
+{
+    color: #A38D98;
+    font-family: Times new Roman;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom:10px;
+
+}
+
+p
+{
+  font-size:18px;
+  font-weight:lighter;
+  color:#F9F2F5;
+  width: 700px;
+  margin-top:0;
+  margin-bottom:100px;
+  
+}
+
+.imgs
+{
+  height:300px;
+  width: 400px;
+  margin-right:800px;
+  padding-left:0;
+  
+  
+}
+
+.contact
+{
+  height:30px;
+  margin:10px;
+  margin-top: 30px;
+  filter: invert(61%) sepia(10%) saturate(422%) hue-rotate(277deg) brightness(93%) contrast(89%);
+}
+
+#footer
+{
+  height:160px;
+  width: 100%;
+  margin-top:300px;
+}
+
+#request
+{
+  color:#A38D98;
+  margin:50px;
+  text-decoration:none;
+}
+
+* Style the Image Used to Trigger the Modal */
+.imgs {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.imgs:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

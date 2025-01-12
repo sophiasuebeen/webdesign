@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="cloudstyle.css">
+    </head>
+    
+    <body>
+        <div class="bg-image"></div>
+        
+        <div class="bg-text">
+            
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="page2.html"><li>Home</li></a>
+                <a href="page3.html"><li>High Level Clouds</li></a>
+                <a href="page4.html"><li>Mid Level Clouds</li></a>
+                <a href="page5.html"><li>Low Level Clouds</li></a> 
+            </div>
+            
+            <div id="main"><button class="openbtn" onclick="openNav()">&#9776;</button></div>
+            
+             
+            
+            <h1>Clouds</h1>
+            <center><p>All clouds are made up of basically the same thing: water droplets or ice crystals
+            that float in the sky. But all clouds look a little bit different from one another, and
+            sometimes these differences can help us predict a change in the weather.</p></center>
+           
+            <h2></h2>
+            
+            <a href="page2.html" class="button">View More</a>
+            
+            
+            <div id="footer">
+                <center>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" class="contact"></a>
+                    <a href="https://www.instagram.com"><img src="images/insta.png" class="contact"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube.png" class="contact"></a>
+                </center>
+                <a href="page6.html" id="request">Request for Rectification</a>
+            </div>
+            
+        </div>
+        
+        <script> /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        }</script>
+        
+    </body>
+
+</htmml>

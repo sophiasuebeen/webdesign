@@ -1,0 +1,131 @@
+body, html
+{
+  height:1000px;
+  margin: 0;
+  padding: 0;
+  background-color: #1B1F26;
+}
+
+::-webkit-scrollbar { display: none; }
+
+#nav
+{
+  list-style-type: none;
+  padding:  0;
+  overflow: auto;
+}
+            
+#nav li
+{
+  float: right;
+  width: 200px;
+  text-align: center;
+  padding: 20px 0;
+  color: #A38D98;
+}
+
+#nav li:hover
+{
+  text-transform:uppercase;
+  color:#DBC5D0;
+
+}
+
+
+#div2
+{
+  background-image: url("images/clouds-414199-2.jpg");
+}
+
+#div3
+{
+  background-image: url("images/sea-540123_1920-2.jpg");
+}
+
+#div4
+{
+  background-image: url("images/rays-3902368_1920-2.jpg");
+}
+  
+#div2, #div3, #div4
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  width: 445px;
+  height: 700px;
+  float: left;
+  margin: 10px;
+  position:relative;
+  left: 60px;
+  right: 60px;
+
+}
+
+h1
+{
+  margin-top: 120px;
+  text-align: center;
+  font-family: times new roman;
+  font-weight: 100;
+  font-size: 50px;
+  color: #A38D98;
+}
+
+.title
+{
+  margin-top:100px;
+  font-family: times new roman;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+p
+{
+  text-align: center;
+  color: white;
+}
+
+.button
+{
+  border:solid;
+  color:white;
+  padding:15px 30px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:14px;
+  margin:4px 2px;
+  cursor:pointer;
+}
+
+.button:hover
+{
+  background-color:#5F6F87;
+}
+
+.contact
+{
+  height:30px;
+  margin:10px;
+  margin-top: 30px;
+  filter: invert(61%) sepia(10%) saturate(422%) hue-rotate(277deg) brightness(93%) contrast(89%);
+}
+
+#footer
+{
+  margin-top:850px;
+  height:160px;
+  width:100%;
+  text-align:center;
+  text-decoration: none;
+  clear:left;
+}
+
+#request
+{
+  color:#A38D98;
+  margin:50px;
+  text-decoration:none;
+}
